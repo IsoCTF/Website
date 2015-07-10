@@ -30,12 +30,26 @@
     margin-right: 15px;
 }
 
+.navbar {
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
 a.navbar-brand {
     max-width: 250px;
 }
 
 .header-logo {
     height: 100%;
+}
+
+label, .control-label, .help-block, .checkbox, .radio {
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .button-column {

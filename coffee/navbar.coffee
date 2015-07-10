@@ -1,8 +1,10 @@
 apiOffline =
+  Home: "/"
   About: "/about"
   News: "/news"
 
 teacherLoggedIn =
+  Home: "/"
   Problems: "/problems"
   Shell: "/shell"
   Scoreboard: "/scoreboard"
@@ -15,6 +17,7 @@ teacherLoggedIn =
     Logout: "#"
 
 teacherLoggedInNoCompetition =
+  Home: "/"
   Classroom: "/classroom"
   About: "/about"
   News: "/news"
@@ -23,6 +26,7 @@ teacherLoggedInNoCompetition =
     Logout: "#"
 
 userLoggedIn =
+  Home: "/"
   Problems: "/problems"
   Shell: "/shell"
   Team: "/team"
@@ -36,10 +40,11 @@ userLoggedIn =
     Logout: "#"
 
 userLoggedInNoCompetition =
+  Home: "/"
   Team: "/team"
   Chat: "/chat"
   Scoreboard: "/scoreboard"
-  About:  
+  About:
     About: "/about"
     News: "/news"
   Account:
@@ -48,6 +53,7 @@ userLoggedInNoCompetition =
 
 
 userNotLoggedIn =
+  Home: "/"
   About: "/about"
   News: "/news"
   Scoreboard: "/scoreboard"

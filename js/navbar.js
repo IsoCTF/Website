@@ -3,11 +3,13 @@
   var apiOffline, loadNavbar, teacherLoggedIn, teacherLoggedInNoCompetition, userLoggedIn, userLoggedInNoCompetition, userNotLoggedIn;
 
   apiOffline = {
+    Home: "/",
     About: "/about",
     News: "/news"
   };
 
   teacherLoggedIn = {
+    Home: "/",
     Problems: "/problems",
     Shell: "/shell",
     Scoreboard: "/scoreboard",
@@ -23,6 +25,7 @@
   };
 
   teacherLoggedInNoCompetition = {
+    Home: "/",
     Classroom: "/classroom",
     About: "/about",
     News: "/news",
@@ -33,6 +36,7 @@
   };
 
   userLoggedIn = {
+    Home: "/",
     Problems: "/problems",
     Shell: "/shell",
     Team: "/team",
@@ -49,6 +53,7 @@
   };
 
   userLoggedInNoCompetition = {
+    Home: "/",
     Team: "/team",
     Chat: "/chat",
     Scoreboard: "/scoreboard",
@@ -63,6 +68,7 @@
   };
 
   userNotLoggedIn = {
+    Home: "/",
     About: "/about",
     News: "/news",
     Scoreboard: "/scoreboard",
