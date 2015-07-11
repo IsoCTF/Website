@@ -4,13 +4,8 @@
 	.feature-content{width:55%;}
 }
 @media only screen and (max-width: 1024px) {
-	.count-down li div,
-	.count-down li canvas {
-	    width: 230px !important;
-	    height: 230px !important;
-	}
 	.count-down li input {
-	    margin: 36px 0 0 -187px !important;
+	    margin: 35px 0 0 -180px !important;
 }
 @media screen and (max-width:991px){
 	.feature-1,.feature-2{margin-bottom:50px;}
