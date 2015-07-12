@@ -2,44 +2,34 @@ $(document).ready(function() {
 
 	particlesJS.load('particles-js', '/js/libs/particles.json');
 
-	$(".count-down").ccountdown(2015,12,30,'16:29');
+	$(".count-down").ccountdown(2015,9,20,'9:00');
 
 	/***************** Waypoints ******************/
 
 	$('.wp1').waypoint(function() {
-		$('.wp1').addClass('animated fadeInLeft');
+		$('.wp1').addClass('animated fadeInDown');
 	}, {
-		offset: '75%'
+		offset: '90%'
 	});
 	$('.wp2').waypoint(function() {
-		$('.wp2').addClass('animated fadeInDown');
+		$('.wp2').addClass('animated fadeInLeft');
 	}, {
 		offset: '75%'
 	});
 	$('.wp3').waypoint(function() {
-		$('.wp3').addClass('animated bounceInDown');
+		$('.wp3').addClass('animated fadeInLeft');
 	}, {
 		offset: '75%'
 	});
 	$('.wp4').waypoint(function() {
-		$('.wp4').addClass('animated fadeInDown');
+		$('.wp4').addClass('animated fadeInUp');
 	}, {
 		offset: '75%'
 	});
-
-	/***************** Flickity ******************/
-
-	$('#featuresSlider').flickity({
-		cellAlign: 'left',
-		contain: true,
-		prevNextButtons: false
-	});
-
-	$('#showcaseSlider').flickity({
-		cellAlign: 'left',
-		contain: true,
-		prevNextButtons: false,
-		imagesLoaded: true
+	$('.wp5').waypoint(function() {
+		$('.wp5').addClass('animated fadeInLeft');
+	}, {
+		offset: '75%'
 	});
 
 	/***************** Fancybox ******************/

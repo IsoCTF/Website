@@ -444,7 +444,7 @@ a:hover, a:focus {
 /* ==========================================================================
 Buttons
 ========================================================================== */
-.use-btn {
+.reg-btn {
     display: inline-block;
     margin: 0 10px 10px 0;
     padding: 20px 50px;
@@ -453,12 +453,12 @@ Buttons
     color: #4b98a9;
     font-size: 16px;
 }
-.use-btn:hover, .use-btn:focus {
+.reg-btn:hover, .reg-btn:focus {
     background-color: #73d0da;
     color: #fff;
     text-decoration: none;
 }
-.learn-btn, .download-btn {
+.learn-btn {
     display: inline-block;
     padding: 18px 46px;
     border: 2px solid #fff;
@@ -466,7 +466,7 @@ Buttons
     color: #fff;
     font-size: 16px;
 }
-.learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
+.learn-btn:hover, .learn-btn:focus {
     border-color: #73d0da;
     color: #73d0da;
     text-decoration: none;
@@ -480,12 +480,6 @@ Buttons
 .read-more-btn i, .download-btn i {
     margin-left: 5px
 }
-.showcase .download-btn {
-    margin-top: 50px
-}
-.download .download-btn {
-    margin-top: 25px
-}
 
 /* ==========================================================================
 Hero
@@ -493,7 +487,7 @@ Hero
 .hero {
     position: relative;
     min-height: 700px;
-    background: rgb(40, 70, 102) url('../img/hero-01.jpg') no-repeat center center;
+    background: rgb(40, 70, 102);
     background-size: cover;
     color: #fff;
 }
@@ -506,10 +500,6 @@ Hero
     display: inline-block;
     color: #a1a9b0;
 }
-#home {
-    width: 100%;
-    height: 100%;
-}
 .hero {
     width: 100%;
     height: 100%;
@@ -519,128 +509,22 @@ header i {
 }
 
 /* ==========================================================================
-Video
+Info List
 ========================================================================== */
-section.video i {
-    margin-right: 10px;
-    color: #323a45;
-    vertical-align: middle;
-    font-size: 50px;
-    -webkit-transition: color 300ms ease-in-out;
-    transition: color 300ms ease-in-out;
+.info-list {
+    padding: 50px 0 0 0
 }
-section.video h1 {
-    font-weight: 400;
-    font-size: 20px;
-}
-section.video {
-    padding: 60px 0;
-    background-color: #f6f7f9;
-}
-section.video a {
-    color: #323a45
-}
-section.video a:hover, section.video a:focus {
-    color: #73d0da;
-    text-decoration: none;
-}
-section.video a:hover i, section.video a:focus i {
-    color: #73d0da
-}
-
-/* ==========================================================================
-Custom Slider Controls (Flickity)
-========================================================================== */
-.flickity-page-dots .dot {
-    width: 13px;
-    height: 13px;
-    opacity: 1;
-    background: transparent;
-    border: 2px solid white;
-    -webkit-transition: background 0.3s;
-    transition: background 0.3s;
-}
-.flickity-page-dots .dot.is-selected {
-    background: white;
-}
-
-/* ==========================================================================
-Features Slider
-========================================================================== */
-.features-bg {
-    position: relative;
-    min-height: 400px;
-    background: url('../img/features-intro-01.jpg') no-repeat center center;
-    background-size: cover;
-}
-.features-img {
-    width: 100%;
-    height: 400px;
-    text-align: center;
-    line-height: 400px;
-}
-.features-slider {
-    position: relative;
-    padding: 11% 100px 10% 100px;
-    height: 400px;
-    background-color: #3F6184;
-}
-.features-slider ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.features-slider ul li {
-    width: 100%;
-}
-.features-slider li h1 {
-    margin-bottom: 15px;
-    color: #fff;
-    font-weight: 400;
-    font-size: 22px;
-}
-.features-slider li p {
-    color: #fff;
-    font-size: 14px;
-}
-.features-intro-img {
-    position: relative
-}
-.slides li h1 {
-    margin: 0;
-    padding: 0;
-}
-.features-slider .flickity-page-dots {
-    text-align: left;
-    margin-top: 50px;
-    position: static;
-}
-.features-slider .flickity-page-dots .dot {
-    margin: 0 12px 0 0;
-}
-
-/* ==========================================================================
-Features List
-========================================================================== */
-.features-list {
-    padding: 130px 0
-}
-.features-list h1 {
+.info-list h1 {
     margin: 0 0 10px 0;
     padding: 0;
-    color: #24374b;
     font-size: 20px;
 }
-.features-list p {
-    margin-bottom: 20px;
-    color: #778899;
-}
-.feature-content {
+.info-content {
     display: inline-block;
     margin-left: 0;
     width: 65%;
 }
-.feature-icon {
+.info-icon {
     display: inline-block;
     margin-right: 25px;
     width: 90px;
@@ -652,7 +536,7 @@ Features List
     font-size: 25px;
     line-height: 90px;
 }
-.feature-icon i {
+.info-icon i {
     color: #4e9ba3
 }
 
@@ -682,75 +566,6 @@ blockquote .avatar {
 blockquote .logo-quote {
     display: inline-block;
     margin: 0 0 0 90px;
-}
-
-/* ==========================================================================
-Showcase
-========================================================================== */
-.showcase {
-    background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
-.showcase h1 {
-    margin: 0 0 20px 0;
-    color: #fff;
-    font-weight: 400;
-    font-size: 22px;
-}
-.showcase p {
-    margin-bottom: 25px;
-    color: #fff;
-}
-.device {
-    position: absolute;
-    top: -60px;
-    left: 20%;
-    min-height: 676px;
-    width: 359px;
-    background: url('../img/iphone-skeleton.png') no-repeat center center;
-}
-.device-content {
-    position: absolute;
-    top: 115px;
-    left: 56px;
-    width: 247px;
-    height: 445px;
-    background: rgba(0, 0, 0, 0.3);
-}
-.device-content img {
-    width: 247px;
-    height: 445px;
-}
-.showcase-wrap {
-    position: relative;
-    padding: 100px 0;
-    min-height: 600px;
-}
-.showcase-slider ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.showcase-slider .flickity-page-dots {
-    bottom: 20px;
-}
-
-/* ==========================================================================
-Screenshots Intro
-========================================================================== */
-.screenshots-intro {
-    padding: 170px 0 100px 0;
-    background-color: #f6f7f9;
-}
-.screenshots-intro h1 {
-    margin-bottom: 20px;
-    color: #24374b;
-    font-weight: 400;
-    font-size: 22px;
-}
-.screenshots-intro p {
-    margin-bottom: 25px;
-    color: #778899;
 }
 
 /* ==========================================================================
@@ -840,24 +655,16 @@ Screenshots
 }
 
 /* ==========================================================================
-Download Now
+Sponsors
 ========================================================================== */
-.download {
-    padding: 120px 0;
-    background-color: #3f6184;
-}
-.download h1 {
-    margin: 0 0 15px 0;
-    color: #fff;
-    font-weight: 400;
-    font-size: 40px;
+#sponsors img {
+  margin: auto;
 }
 
 /* ==========================================================================
 Footer
 ========================================================================== */
 footer p {
-    color: #c7cacc;
     font-size: 12px;
 }
 
@@ -877,4 +684,12 @@ Waypoints
 .delay-1s {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
+}
+.delay-105s {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+.delay-2s {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
 }

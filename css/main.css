@@ -38,6 +38,11 @@
     height: 100%;
 }
 
+.less-padding {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
 .navbar {
     margin-bottom: 0px;
     font-size: 15px;
@@ -378,4 +383,17 @@ ul.social-buttons li a:active {
     width:115px;
     text-align:center;
     z-index: 2;
+}
+
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
 }

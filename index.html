@@ -4,7 +4,6 @@ title: Homepage
 title_label: hide
 post_scripts:
 - /js/registration.js
-- /js/libs/flickity.pkgd.min.js
 - /js/libs/jquery.fancybox.pack.js
 - /js/libs/waypoints.min.js
 - /js/libs/particles.min.js
@@ -16,15 +15,58 @@ startup_functions:
 ---
 
 <div class="container">
-    <div class="row">
+    <section class="info-list" id="info">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4 info-1 wp1">
+                    <div class="info-icon">
+                        <i class="fa fa-unlock-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h1>Learn &amp; Hack</h1>
+                        <p>Learn by doing! IsoCTF offers a hands-on approach to learning computer science and security concepts.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 info-2 wp1 delay-05s">
+                    <div class="info-icon">
+                        <i class="fa fa-trophy"></i>
+                    </div>
+                    <div class="info-content">
+                        <h1>Win</h1>
+                        <p>Information regarding prizes will be released in the future, but rest assured, there will be prizes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 info-3 wp1 delay-1s">
+                    <div class="info-icon">
+                        <i class="fa fa-graduation-cap"></i>
+                    </div>
+                    <div class="info-content">
+                        <h1>Teach</h1>
+                        <p>Special Teacher Accounts help teachers manage picoCTF as a fun and educational classroom event.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row wp2">
+          <h2 class="text-center">What is isoCTF?</h2>
+  					<div class="col-md-12">
+    						<p><b>IsoCTF</b> is a computer security game targeted at middle and high school students. The competition consists of a series of
+                  challenges where participants must reverse engineer, break, hack, decrypt, or do whatever it takes to solve the challenge. The
+                  challenges are all set up with the intent of being hacked, making it an excellent, <b>legal</b> way to get hands-on experience.</p>
+                <p><a href="/about" class="read-more-btn">Read More! <i class="fa fa-chevron-circle-right"></i></a></p>
+  					</div>
+				</div>
+    </section>
+    <div class="row row-centered wp3" id="sponsors">
+       <h2>Our Sponsors</h2>
+       <div class="col-md-3 col-centered wp4 delay-05s">
+          <a href="#"><img src="/img/placeholder.png" class="img-responsive" alt="Your Logo Here!"></a>
+       </div>
+    </div>
+    <div class="row wp5">
         <div id="registration">
-	         <h2>Register Now!</h2>
+	         <h2 class="text-center">Register Now!</h2>
             {% include registration-index.html %}
         </div>
     </div>
-    <div class="row">
-        
-    </div>
-</div>
-<div style="background-color:blue;min-height:50px;">
 </div>
