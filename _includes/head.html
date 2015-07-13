@@ -3,7 +3,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <!--TODO: meta for description and keywords-->
+    <meta name="description" content="IsoCTF is an international online high school hacking competition run by high school students. IsoCTF aims to open the door to computer science and cybersecurity for students all around the world.">
+    <meta name="keywords" content="ctf, computer science, hacking, high school, programming, security, puzzle, challenge, algorithm, cryptography, learn">
     {% for css_file in page.css_files %}
         <link href="{{ css_file }}" rel="stylesheet" media="screen">
     {% endfor %}

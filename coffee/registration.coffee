@@ -1,4 +1,4 @@
-recaptchaPublicKey = "6LcRpAkTAAAAAGgGXdtL32fs1ctJbGKtAgkmxIYp"
+recaptchaPublicKey = "6LcSsQkTAAAAAE2zzSJiiIr2Dn32fQ4W0onQveu6"
 
 reloadCaptcha = ->
   apiCall "GET", "/api/user/status", {}
