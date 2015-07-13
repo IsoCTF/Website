@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: team
 title: Team
-pre_scripts:
+post_scripts:
  - //cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/popover.js
  - //cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js
-post_scripts:
  - js/progression_graphs.js
  - js/team.js
 startup_functions:
@@ -128,11 +127,4 @@ startup_functions:
         </div>
     </div>
   </div>
-</script>
-
-<script language="javascript">
-    $(window).load(function() {
-        console.log($('.poptrigger'));
-        $('.poptrigger').popover({html: true});
-    });
 </script>
